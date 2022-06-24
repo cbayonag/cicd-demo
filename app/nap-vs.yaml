@@ -6,7 +6,9 @@ spec:
   host: app-52-151-243-80.nip.io
   tls:
     secret: juice-shop-secret
-  ingressClassName: rg-cdbg-nginx-ingress  
+  policies:
+  - name: nap-policy
+ingressClassName: rg-cdbg-nginx-ingress  
   upstreams:
   - name: juice-shop
     service: juice-shop-svc
